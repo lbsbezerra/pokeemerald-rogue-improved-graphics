@@ -1,0 +1,47 @@
+@
+@ DO NOT MODIFY THIS FILE! It is auto-generated from data/maps/Rogue_Hub_Debug/map.json
+@
+
+Rogue_Hub_Debug_ObjectEvents:
+	object_event 1, OBJ_EVENT_GFX_MISC_PROFESSOR_ELM, 5, 1, 3, MOVEMENT_TYPE_NONE, 0, 0, TRAINER_TYPE_NONE, 0, Rogue_Debug_FillPCWithGen, 0
+	object_event 2, OBJ_EVENT_GFX_OLD_MAN, 0, 4, 3, MOVEMENT_TYPE_NONE, 0, 0, TRAINER_TYPE_NONE, 0, Rogue_Debug_AddMoney, 0
+	object_event 3, OBJ_EVENT_GFX_SCOTT, 3, 7, 3, MOVEMENT_TYPE_NONE, 0, 0, TRAINER_TYPE_NONE, 0, Rogue_Debug_ClearQuests, 0
+	object_event 4, OBJ_EVENT_GFX_SCOTT, 4, 7, 3, MOVEMENT_TYPE_NONE, 0, 0, TRAINER_TYPE_NONE, 0, Rogue_Debug_CompleteAvaliableQuests, 0
+	object_event 5, OBJ_EVENT_GFX_SCOTT, 5, 7, 3, MOVEMENT_TYPE_NONE, 0, 0, TRAINER_TYPE_NONE, 0, Rogue_Debug_CollectAllQuests, 0
+	object_event 6, OBJ_EVENT_GFX_QUEST_BOARD, 4, 5, 3, MOVEMENT_TYPE_NONE, 0, 0, TRAINER_TYPE_NONE, 0, Rogue_InteractWithQuestBoard, 0
+	object_event 7, OBJ_EVENT_GFX_QUINTY_PLUMP, 9, 4, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, TRAINER_TYPE_NONE, 0, Rogue_Debug_TrainerSingle, 0
+	object_event 8, OBJ_EVENT_GFX_WOMAN_2, 1, 10, 3, MOVEMENT_TYPE_NONE, 0, 0, TRAINER_TYPE_NONE, 0, Rogue_Debug_DisplayDifficultyConfigMenu, 0
+	object_event 9, OBJ_EVENT_GFX_MISC_PROFESSOR_ELM, 3, 10, 3, MOVEMENT_TYPE_NONE, 0, 0, TRAINER_TYPE_NONE, 0, Rogue_Debug_DisplayPokedex, 0
+	object_event 10, OBJ_EVENT_GFX_BOY_2, 21, 16, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 2, TRAINER_TYPE_NONE, 0, NULL, 0
+	object_event 11, OBJ_EVENT_GFX_CONTEST_JUDGE, 5, 10, 3, MOVEMENT_TYPE_NONE, 0, 0, TRAINER_TYPE_NONE, 0, Rogue_Debug_DisplayVoltorbFlip, 0
+	object_event 12, OBJ_EVENT_GFX_GIRL_1, 19, 16, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 2, TRAINER_TYPE_NONE, 0, NULL, 0
+	object_event 13, OBJ_EVENT_GFX_ROCKET_F, 19, 18, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 2, TRAINER_TYPE_NONE, 0, NULL, 0
+	object_event 14, OBJ_EVENT_GFX_BOY_2, 17, 18, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 2, TRAINER_TYPE_NONE, 0, NULL, 0
+	object_event 15, OBJ_EVENT_GFX_PALDEA_LARRY, 17, 16, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 2, TRAINER_TYPE_NONE, 0, NULL, 0
+	object_event 16, OBJ_EVENT_GFX_GIRL_1, 36, 16, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 2, TRAINER_TYPE_NONE, 0, NULL, 0
+	object_event 17, OBJ_EVENT_GFX_PALDEA_RIKA, 38, 16, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 2, TRAINER_TYPE_NONE, 0, NULL, 0
+	object_event 18, OBJ_EVENT_GFX_GIRL_2, 36, 18, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 2, TRAINER_TYPE_NONE, 0, NULL, 0
+	object_event 19, OBJ_EVENT_GFX_BOY_2, 34, 18, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 2, TRAINER_TYPE_NONE, 0, NULL, 0
+	object_event 20, OBJ_EVENT_GFX_PC_STAND, 4, 1, 0, MOVEMENT_TYPE_NONE, 0, 0, TRAINER_TYPE_NONE, 0, EventScript_PC, 0
+	object_event 21, OBJ_EVENT_GFX_MISC_HEX_MANIAC, 12, 1, 3, MOVEMENT_TYPE_NONE, 0, 0, TRAINER_TYPE_NONE, 0, Rogue_Debug_GiveSacredAsh, 0
+	object_event 22, OBJ_EVENT_GFX_SPENSER, 15, 1, 3, MOVEMENT_TYPE_NONE, 0, 0, TRAINER_TYPE_NONE, 0, Rogue_Tutor_MoveDelete, 0
+	object_event 23, OBJ_EVENT_GFX_BLACK_BELT, 18, 1, 3, MOVEMENT_TYPE_NONE, 4, 0, TRAINER_TYPE_NONE, 0, Rogue_Tutor_TutorMoveLearn, 0
+	object_event 24, OBJ_EVENT_GFX_ITEM_MEGA_STONE, 32, 1, 0, MOVEMENT_TYPE_NONE, 0, 0, TRAINER_TYPE_NONE, 0, Rogue_Debug_GiveMegaRing, 0
+	object_event 25, OBJ_EVENT_GFX_ITEM_Z_CRYSTAL, 34, 1, 0, MOVEMENT_TYPE_NONE, 0, 0, TRAINER_TYPE_NONE, 0, Rogue_Debug_GiveZRing, 0
+	object_event 26, OBJ_EVENT_GFX_ITEM_DYNAMAX_BALL, 36, 1, 0, MOVEMENT_TYPE_NONE, 0, 0, TRAINER_TYPE_NONE, 0, Rogue_Debug_DynamaxBand, 0
+	object_event 27, OBJ_EVENT_GFX_ITEM_HEALING, 38, 1, 0, MOVEMENT_TYPE_NONE, 0, 0, TRAINER_TYPE_NONE, 0, Rogue_Debug_HealingFlask, 0
+	object_event 28, OBJ_EVENT_GFX_BIRCHS_BAG, 15, 4, 0, MOVEMENT_TYPE_NONE, 0, 0, TRAINER_TYPE_NONE, 0, Rogue_Debug_ChooseStarter, 0
+	object_event 29, OBJ_EVENT_GFX_BILL, 7, 10, 3, MOVEMENT_TYPE_NONE, 0, 0, TRAINER_TYPE_NONE, 0, Rogue_Debug_ClearDynamicCustomMons, 0
+	object_event 30, OBJ_EVENT_GFX_ITEM_BALL, 1, 12, 3, MOVEMENT_TYPE_NONE, 0, 0, TRAINER_TYPE_NONE, 0, Rogue_Debug_AdjustMonMasteries, 0
+	object_event 31, OBJ_EVENT_GFX_FISHERMAN, 34, 16, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 2, TRAINER_TYPE_NONE, 0, NULL, 0
+
+Rogue_Hub_Debug_MapWarps:
+	warp_def 1, 3, 0, 12, MAP_ROGUE_AREA_LABS
+	warp_def 20, 12, 0, 0, MAP_ROGUE_ENCOUNTER_BATTLE_SIM
+
+Rogue_Hub_Debug_MapBGEvents:
+	bg_sign_event 7, 1, 0, BG_EVENT_PLAYER_FACING_NORTH, Rogue_Interior_Home_ChangeClothes
+
+Rogue_Hub_Debug_MapEvents::
+	map_events Rogue_Hub_Debug_ObjectEvents, Rogue_Hub_Debug_MapWarps, NULL, Rogue_Hub_Debug_MapBGEvents
+
