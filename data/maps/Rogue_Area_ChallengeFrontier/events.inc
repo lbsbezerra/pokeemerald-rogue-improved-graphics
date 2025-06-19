@@ -14,9 +14,9 @@ Rogue_Area_ChallengeFrontier_MapWarps:
 	warp_def 6, 20, 0, 0, MAP_ROGUE_AREA_TOWN_SQUARE
 	warp_def 0, 15, 0, 0, MAP_ROGUE_AREA_TOWN_SQUARE
 	warp_def 0, 16, 0, 0, MAP_ROGUE_AREA_TOWN_SQUARE
-	warp_def 19, 8, 0, 0, MAP_ROGUE_INTERIOR_CHALLENGE_FRONTIER
-	warp_def 20, 8, 0, 0, MAP_ROGUE_INTERIOR_CHALLENGE_FRONTIER
-	warp_def 19, 9, 0, 0, MAP_ROGUE_AREA_TOWN_SQUARE
+	warp_def 19, 9, 0, 0, MAP_ROGUE_INTERIOR_CHALLENGE_FRONTIER
+	warp_def 20, 9, 0, 0, MAP_ROGUE_INTERIOR_CHALLENGE_FRONTIER
+	warp_def 19, 10, 0, 0, MAP_ROGUE_AREA_TOWN_SQUARE
 
 Rogue_Area_ChallengeFrontier_MapEvents::
 	map_events Rogue_Area_ChallengeFrontier_ObjectEvents, Rogue_Area_ChallengeFrontier_MapWarps, NULL, NULL

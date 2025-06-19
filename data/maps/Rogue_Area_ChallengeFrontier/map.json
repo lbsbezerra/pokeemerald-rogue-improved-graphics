@@ -108,21 +108,21 @@
     },
     {
       "x": 19,
-      "y": 8,
+      "y": 9,
       "elevation": 0,
       "dest_map": "MAP_ROGUE_INTERIOR_CHALLENGE_FRONTIER",
       "dest_warp_id": "0"
     },
     {
       "x": 20,
-      "y": 8,
+      "y": 9,
       "elevation": 0,
       "dest_map": "MAP_ROGUE_INTERIOR_CHALLENGE_FRONTIER",
       "dest_warp_id": "0"
     },
     {
       "x": 19,
-      "y": 9,
+      "y": 10,
       "elevation": 0,
       "dest_map": "MAP_ROGUE_AREA_TOWN_SQUARE",
       "dest_warp_id": "0"
