@@ -59,7 +59,7 @@
 #define RGB_DAYTIME         RGB_WHITE
 #define RGB_SUNSET          RGB(31, 16, 16)
 
-#define DAYS_PER_SEASON     1
+#define DAYS_PER_SEASON     2 
 
 struct ToDPalette
 {
@@ -140,13 +140,6 @@ extern const u16 gTilesetPalettes_General02_Spring[];
 extern const u16 gTilesetPalettes_General02_Summer[];
 extern const u16 gTilesetPalettes_General02_Autumn[];
 extern const u16 gTilesetPalettes_General02_Winter[];
-
-//TEST: Declare gTileset_Fortree as extern
-extern const struct Tileset gTileset_Fortree;
-
-//extern const for Sinnoh (Route 209)
-extern const u16 gTilesetPalettes_Fortree12_Spring[];
-extern const u16 gTilesetPalettes_Fortree12_Autumn[];
 
 extern const u16 gTilesetPalettes_General02_Day[];
 extern const u16 gTilesetPalettes_General02_Night[];
@@ -389,24 +382,6 @@ static void TintPalette_Season(u16 *palette, u16 size)
     }
 }
 
-// testing the function running AFTER the General palette tinting. To see if it works or not. If it doesn't, try BEFORE.
-static void TintPalette_Fortree12_Season(u16 *palette, u16 size)
-{
-    switch (RogueToD_GetVisualSeason())
-    {
-    case SEASON_SPRING:
-        break;
-    case SEASON_SUMMER:
-        break;
-    case SEASON_AUTUMN:
-        // Compare against Fortree12_Spring and apply Fortree12_Autumn
-        TintPalette_CompareOverride(palette, size, gTilesetPalettes_Fortree12_Spring, gTilesetPalettes_Fortree12_Autumn);
-        break;
-    case SEASON_WINTER:
-        break;
-    }
-}
-
 static void TintPalette_ToD(u16 *palette, u16 size, u16 colour)
 {
     // Glowing water :(
@@ -486,41 +461,10 @@ void RogueToD_ModifyOverworldPalette(u16 offset, u16 size)
     //    return;
     //}
 
-    // TEST: Check if the current secondary tileset is Fortree.
-    // gMapHeader is a common global variable to access current map data.
-    // The exact way to access the current tileset may vary slightly by project,
-    // but often it's gMapHeader.secondaryTileset or something similar.
-    bool8 isFortreeTilesetActive = FALSE;
-
-    if (gMapHeader.mapLayout && gMapHeader.mapLayout->secondaryTileset == &gTileset_Fortree)
-    {
-        isFortreeTilesetActive = TRUE;
-    }
-
     if(RogueToD_ApplySeasonVisuals())
     {
-        // Iterate through each 16-color palette block within the given offset and size
-        for (u16 i = 0; i < size; i += PLTT_SIZE_4BPP) // PLTT_SIZE_4BPP is 16 u16s (32 bytes)
-        {
-            u16 currentPaletteOffset = offset + i; // The start of the current 16-color palette within gPlttBufferUnfaded
-
-            // Check if this current palette block is BG palette 2 (where General02 is usually loaded)
-            if (currentPaletteOffset == BG_PLTT_ID(2))
-            {
-                // Apply the General02 specific tint
-                TintPalette_Season(&gPlttBufferUnfaded[currentPaletteOffset], PLTT_SIZE_4BPP);
-                isDirty = TRUE;
-            }
-            // Check if this current palette block is BG palette 12 (where Fortree12 is loaded)
-            // AND ensure the Fortree tileset is actually active to avoid tinting unintended palettes.
-            else if (currentPaletteOffset == BG_PLTT_ID(12) && isFortreeTilesetActive)
-            {
-                // Apply the Fortree12 specific tint
-                TintPalette_Fortree12_Season(&gPlttBufferUnfaded[currentPaletteOffset], PLTT_SIZE_4BPP);
-                isDirty = TRUE;
-            }
-            // Add more else if blocks here for any other specific seasonal palettes you might have.
-        }
+        TintPalette_Season(&gPlttBufferUnfaded[offset], size);
+        isDirty = TRUE;
     }
 
     if(RogueToD_ApplyTimeVisuals())
