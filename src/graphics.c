@@ -1977,6 +1977,10 @@ const u16 gTilesetPalettes_General02_Summer[] = INCBIN_U16("data/tilesets/primar
 const u16 gTilesetPalettes_General02_Autumn[] = INCBIN_U16("data/tilesets/primary/general/palettes/season/02_autumn.gbapal");
 const u16 gTilesetPalettes_General02_Winter[] = INCBIN_U16("data/tilesets/primary/general/palettes/season/02_winter.gbapal");
 
+// Changes from Leob0505: Pal 12 for Fortree tileset contains colours we want to override for season (Sinnoh Trees and grass in Route 209). Also added Spring for the comparisonoveride in src/rogue_timeofday.c
+const u16 gTilesetPalettes_Fortree12_Spring[] = INCBIN_U16("data/tilesets/secondary/fortree/palettes/season/12_spring.gbapal");
+const u16 gTilesetPalettes_Fortree12_Autumn[] = INCBIN_U16("data/tilesets/secondary/fortree/palettes/season/12_autumn.gbapal");
+
 const u16 gTilesetPalettes_General02_Day[] = INCBIN_U16("data/tilesets/primary/general/palettes/time/02_day.gbapal");
 const u16 gTilesetPalettes_General02_Night[] = INCBIN_U16("data/tilesets/primary/general/palettes/time/02_night.gbapal");
 
