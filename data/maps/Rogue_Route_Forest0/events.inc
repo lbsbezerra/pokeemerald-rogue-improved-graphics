@@ -45,7 +45,7 @@ Rogue_Route_Forest0_ObjectEvents:
 	object_event 40, OBJ_EVENT_GFX_CUTTABLE_TREE, 27, 14, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, TRAINER_TYPE_NONE, 0, EventScript_CutTree, FLAG_TEMP_11
 
 Rogue_Route_Forest0_MapWarps:
-	warp_def 17, 40, 0, 0, MAP_NONE
+	warp_def 17, 40, 0, 0, MAP_DYNAMIC
 	warp_def 14, 5, 0, 0, MAP_ROGUE_ROUTE_FIELD0
 	warp_def 15, 5, 0, 0, MAP_ROGUE_ROUTE_FIELD0
 	warp_def 4, 6, 0, 55, MAP_ROGUE_ROUTE_FIELD0

@@ -697,28 +697,28 @@
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_ROGUE_ROUTE_FIELD1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 2,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_ROGUE_ROUTE_FIELD1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 22,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_ROGUE_ROUTE_FIELD1",
-      "dest_warp_id": 55
+      "dest_warp_id": "55"
     },
     {
       "x": 56,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_ROGUE_ROUTE_FIELD1",
-      "dest_warp_id": 55
+      "dest_warp_id": "55"
     }
   ],
   "coord_events": [

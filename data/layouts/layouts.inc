@@ -1770,7 +1770,7 @@ Rogue_Route_Kanto_Urban0_Layout::
 	.4byte Rogue_Route_Kanto_Urban0_Layout_Border
 	.4byte Rogue_Route_Kanto_Urban0_Layout_Blockdata
 	.4byte gTileset_General
-	.4byte gTileset_Slateport
+	.4byte gTileset_Lilycove
 
 Rogue_Route_Chaos0_Layout_Border::
 	.incbin "data/layouts/Rogue_Route_Chaos0/border.bin"
@@ -3000,7 +3000,7 @@ Rogue_Route_Sinnoh_212_Layout::
 	.4byte Rogue_Route_Sinnoh_212_Layout_Border
 	.4byte Rogue_Route_Sinnoh_212_Layout_Blockdata
 	.4byte gTileset_GeneralHub
-	.4byte gTileset_Mauville
+	.4byte gTileset_Fortree
 
 Rogue_Interior_BillsLab_Layout_Border::
 	.incbin "data/layouts/Rogue_Interior_BillsLab/border.bin"
@@ -3090,7 +3090,7 @@ Rogue_Route_Sinnoh_201_Layout::
 	.4byte Rogue_Route_Sinnoh_201_Layout_Border
 	.4byte Rogue_Route_Sinnoh_201_Layout_Blockdata
 	.4byte gTileset_GeneralHub
-	.4byte gTileset_Petalburg
+	.4byte gTileset_Fortree
 
 Rogue_Boss_VictoryLap_Layout_Border::
 	.incbin "data/layouts/Rogue_Boss_VictoryLap/border.bin"

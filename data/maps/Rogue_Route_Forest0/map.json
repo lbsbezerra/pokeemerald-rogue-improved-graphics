@@ -540,50 +540,50 @@
       "x": 17,
       "y": 40,
       "elevation": 0,
-      "dest_map": "MAP_NONE",
-      "dest_warp_id": 0
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "0"
     },
     {
       "x": 14,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_ROGUE_ROUTE_FIELD0",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 15,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_ROGUE_ROUTE_FIELD0",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 4,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_ROGUE_ROUTE_FIELD0",
-      "dest_warp_id": 55
+      "dest_warp_id": "55"
     },
     {
       "x": 5,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_ROGUE_ROUTE_FIELD0",
-      "dest_warp_id": 55
+      "dest_warp_id": "55"
     },
     {
       "x": 32,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_ROGUE_ROUTE_FIELD0",
-      "dest_warp_id": 55
+      "dest_warp_id": "55"
     },
     {
       "x": 33,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_ROGUE_ROUTE_FIELD0",
-      "dest_warp_id": 55
+      "dest_warp_id": "55"
     }
   ],
   "coord_events": [

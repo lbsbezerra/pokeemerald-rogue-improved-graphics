@@ -1177,7 +1177,7 @@
       "width": 93,
       "height": 40,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Slateport",
+      "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/Rogue_Route_Kanto_Urban0/border.bin",
       "blockdata_filepath": "data/layouts/Rogue_Route_Kanto_Urban0/map.bin"
     },
@@ -1997,7 +1997,7 @@
       "width": 120,
       "height": 40,
       "primary_tileset": "gTileset_GeneralHub",
-      "secondary_tileset": "gTileset_Mauville",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/Rogue_Route_Sinnoh_212/border.bin",
       "blockdata_filepath": "data/layouts/Rogue_Route_Sinnoh_212/map.bin"
     },
@@ -2057,7 +2057,7 @@
       "width": 68,
       "height": 64,
       "primary_tileset": "gTileset_GeneralHub",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/Rogue_Route_Sinnoh_201/border.bin",
       "blockdata_filepath": "data/layouts/Rogue_Route_Sinnoh_201/map.bin"
     },
