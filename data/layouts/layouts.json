@@ -1214,8 +1214,8 @@
     {
       "id": "LAYOUT_ROGUE_ROUTE_KANTO_FOREST0",
       "name": "Rogue_Route_Kanto_Forest0_Layout",
-      "width": 54,
-      "height": 54,
+      "width": 66,
+      "height": 58,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Rogue_Route_Kanto_Forest0/border.bin",
@@ -1237,7 +1237,7 @@
       "width": 96,
       "height": 64,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mauville",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/Rogue_Route_Kanto_Urban1/border.bin",
       "blockdata_filepath": "data/layouts/Rogue_Route_Kanto_Urban1/map.bin"
     },

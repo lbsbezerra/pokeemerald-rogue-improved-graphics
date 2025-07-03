@@ -515,14 +515,14 @@
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_ROGUE_ROUTE_KANTO_URBAN1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 75,
       "y": 43,
       "elevation": 0,
       "dest_map": "MAP_ROGUE_ROUTE_KANTO_URBAN1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

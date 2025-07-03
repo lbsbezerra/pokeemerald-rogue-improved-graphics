@@ -1825,8 +1825,8 @@ Rogue_Route_Kanto_Forest0_Layout_Blockdata::
 
 	.align 2
 Rogue_Route_Kanto_Forest0_Layout::
-	.4byte 54
-	.4byte 54
+	.4byte 66
+	.4byte 58
 	.4byte Rogue_Route_Kanto_Forest0_Layout_Border
 	.4byte Rogue_Route_Kanto_Forest0_Layout_Blockdata
 	.4byte gTileset_General
@@ -1860,7 +1860,7 @@ Rogue_Route_Kanto_Urban1_Layout::
 	.4byte Rogue_Route_Kanto_Urban1_Layout_Border
 	.4byte Rogue_Route_Kanto_Urban1_Layout_Blockdata
 	.4byte gTileset_General
-	.4byte gTileset_Mauville
+	.4byte gTileset_Fortree
 
 Rogue_Route_Johto_Field1_Layout_Border::
 	.incbin "data/layouts/Rogue_Route_Johto_Field1/border.bin"
