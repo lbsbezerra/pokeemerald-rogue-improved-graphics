@@ -554,14 +554,14 @@
       "y": 37,
       "elevation": 0,
       "dest_map": "MAP_ROGUE_ROUTE_KANTO_CAVE0",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 17,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_ROGUE_ROUTE_KANTO_CAVE0",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
