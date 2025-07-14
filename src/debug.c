@@ -3801,22 +3801,25 @@ static void DebugAction_Give_Pokemon_ComplexCreateMon(u8 taskId) //https://githu
     //Shininess
     if (isShiny == 1)
     {
-        u32 personality;
-        u32 otid = gSaveBlock2Ptr->playerTrainerId[0]
-            | (gSaveBlock2Ptr->playerTrainerId[1] << 8)
-            | (gSaveBlock2Ptr->playerTrainerId[2] << 16)
-            | (gSaveBlock2Ptr->playerTrainerId[3] << 24);
+        // NO LONGER GENERATE 'personality' HERE.
+        // CreateMonForcedShiny is designed to handle shiny personality generation internally.
+        // We only need to provide the OT ID for the shiny check.
 
-        do
-        {
-            personality = Random32();
-            personality = ((((Random() % 8) ^ (HIHALF(otid) ^ LOHALF(otid))) ^ LOHALF(personality)) << 16) | LOHALF(personality);
-        } while (nature != GetNatureFromPersonality(personality));
+        u32 full_otid_val = gSaveBlock2Ptr->playerTrainerId[0]
+                          | (gSaveBlock2Ptr->playerTrainerId[1] << 8)
+                          | (gSaveBlock2Ptr->playerTrainerId[2] << 16)
+                          | (gSaveBlock2Ptr->playerTrainerId[3] << 24);
 
-        CreateMon(&mon, species, level, 32, 1, personality, OT_ID_PRESET, otid);
+        // Call CreateMonForcedShiny with the correct number and types of arguments.
+        // Signature: void CreateMonForcedShiny(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV, u8 otIdType, u32 fixedOtId);
+        // Arguments:   &mon,          species,       level,      32,          OT_ID_PRESET, full_otid_val
+        
+        CreateMonForcedShiny(&mon, species, level, 32, OT_ID_PRESET, full_otid_val);
     }
-    else
-        CreateMonWithNature(&mon, species, level, 32, nature);
+    else // If not shiny, use the regular CreateMonWithNature
+    {
+        CreateMonWithNature(&mon, species, level, 32, nature); // Assuming this is your non-shiny creation path
+    }
 
     //IVs
     for (i = 0; i < NUM_STATS; i++)
@@ -3869,8 +3872,17 @@ static void DebugAction_Give_Pokemon_ComplexCreateMon(u8 taskId) //https://githu
     {
     case MON_GIVEN_TO_PARTY:
     case MON_GIVEN_TO_PC:
-        GetSetPokedexSpeciesFlag(species, FLAG_SET_SEEN);
-        GetSetPokedexSpeciesFlag(species, FLAG_SET_CAUGHT);
+        GetSetPokedexSpeciesFlag(species, FLAG_SET_SEEN); // Always set seen
+        
+        // Check if the given Pokemon was shiny
+        if (isShiny == 1) // 'isShiny' variable is set earlier from sDebugMonData->isShiny
+        {
+            GetSetPokedexSpeciesFlag(species, FLAG_SET_CAUGHT_SHINY); // Set as caught shiny (yellow icon)
+        }
+        else
+        {
+            GetSetPokedexSpeciesFlag(species, FLAG_SET_CAUGHT); // Set as regular caught (red icon)
+        }
         break;
     case MON_CANT_GIVE:
         break;
